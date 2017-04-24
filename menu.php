@@ -106,17 +106,17 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li><a href="galeria.php" style="color: #fff;">Stations</a></li>
-        <li><a href="conocenos.php" style="color: #fff;">Statics</a></li>
-        <li><a href="conocenos.php" style="color: #fff;">Service</a></li>
-        <li><a href="conocenos.php" style="color: #fff;">Employees</a></li>
+        <li><a href="stations.php" style="color: #fff;">Stations</a></li>
+        <li><a href="statics.php" style="color: #fff;">Statics</a></li>
+        <li><a href="service.php" style="color: #fff;">Service</a></li>
+        <li><a href="employees.php" style="color: #fff;">Employees</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
       	<?php
       		if(!empty($usr)){
       		echo "<li><a href='#' style='color: #fff;'>" . $_SESSION['nombre'] . "</a></b></li>";
       	?>
-      		<li><a href="logout.php" style="color: #fff;">Cerrar Sesión</a></li>
+      		<li><a href="logout.php" style="color: #fff;">Logout</a></li>
       	<?php
       		}
       	?>
