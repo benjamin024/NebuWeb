@@ -25,8 +25,9 @@
 							<thead  style="text-align: center;">
 								<tr>
 									<th class="col-md-4">ID</th>
-									<th class="col-md-6">Description</th>
+									<th class="col-md-4">Description</th>
 									<th class="col-md-2">Status</th>
+									<th class="col-md-2">Statics</th>
 								</tr>
 							</thead>
 							<tbody  style="text-align: center;">
@@ -36,6 +37,8 @@
 										echo "<td><a href='station.php?deveui=".$resultado["deveui"]."&date=".gmdate("Y-m-d")."'>".$resultado["deveui"]."</td>";
 										echo "<td>".$resultado["descripcion"]."</td>";
 										echo "<td>-</td>";
+										echo "<td><a href='statics.php?deveui=".$resultado["deveui"]."'><span class='glyphicon glyphicon-signal' aria-hidden='true'></span> View Statics </a></td>";
+										echo "</tr>";
 									}
 							}
 							?>

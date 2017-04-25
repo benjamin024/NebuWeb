@@ -27,20 +27,20 @@
     <div class="container">
     	<div class="row flex-parent">
     		<div class="col-md-4 col-md-offset-4 flex-child" >
-    			<center><span style="font-size: 4.0em; font-weight: bold;">Inicia Sesión</span>
+    			<center><span style="font-size: 4.0em; font-weight: bold;">Login</span>
     			<form action="login.php" method="post">
 			  <div class="form-group">
-			    <label for="user">Nombre de Usuario:</label>
+			    <label for="user">Username:</label>
 			    <input type="text" class="form-control" id="user" name="user" placeholder="Nombre de Usuario" required/>
 			  </div>
 			  <div class="form-group">
-			    <label for="pass">Contraseña:</label>
+			    <label for="pass">Password:</label>
 			    <input type="password" class="form-control" id="pass" name="pass" placeholder="Contraseña" required/>
 			  </div>
 			  <div style="text-align: right;">
-			  	<a href="#">¿Olvidaste tu contraseña?</a><br><br>
+			  	<a href="#">Forgot your password?</a><br><br>
 			  </div> 
-			  <button type="submit" class="btn btn-primary">Aceptar</button>
+			  <button type="submit" class="btn btn-primary">Submit</button>
 			</form></center>
     		</div>
     	</div>

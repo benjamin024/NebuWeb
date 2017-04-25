@@ -100,23 +100,22 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index.php" style="color: #fff;">Home</a>
+      <a class="navbar-brand" href="indexUser.php" style="color: #fff;"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li><a href="stations.php" style="color: #fff;">Stations</a></li>
-        <li><a href="statics.php" style="color: #fff;">Statics</a></li>
-        <li><a href="service.php" style="color: #fff;">Service</a></li>
-        <li><a href="employees.php" style="color: #fff;">Employees</a></li>
+        <li><a href="stations.php" style="color: #fff;"><span class="glyphicon glyphicon-screenshot" aria-hidden="true"></span> Stations</a></li>
+        <li><a href="service.php" style="color: #fff;"><span class="glyphicon glyphicon-wrench" aria-hidden="true"></span> Service</a></li>
+        <li><a href="employees.php" style="color: #fff;"><span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span> Employees</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
       	<?php
       		if(!empty($usr)){
-      		echo "<li><a href='#' style='color: #fff;'>" . $_SESSION['nombre'] . "</a></b></li>";
+      		echo "<li><a href='#' style='color: #fff;'><span class='glyphicon glyphicon-user' aria-hidden='true'></span> " . $_SESSION['nombre'] . "</a></b></li>";
       	?>
-      		<li><a href="logout.php" style="color: #fff;">Logout</a></li>
+      		<li><a href="logout.php" style="color: #fff;"><span class="glyphicon glyphicon-log-out" aria-hidden="true"></span> Logout</a></li>
       	<?php
       		}
       	?>
