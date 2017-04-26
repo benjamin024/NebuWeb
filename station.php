@@ -58,7 +58,6 @@
 									<th class="col-md-3">Time</th>
 									<th class="col-md-3">Frequency</th>
 									<th class="col-md-3">Status</th>
-									<th class="col-md-3">Statics</th>
 								</tr>
 							</thead>
 							<tbody  style="text-align: center;">
