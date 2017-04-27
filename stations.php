@@ -2,7 +2,7 @@
 	include("menu.php");
 	require("conexion.php");
 
-	$sql = "SELECT * FROM estacion;";
+	$sql = "SELECT DISTINCT e.deveui, e.descripcion, m.data, m.mtime from estacion as e, mensaje as m where e.deveui = m.deveui and m.mtime IN (SELECT max(mtime) from mensaje WHERE deveui = m.deveui);";
 
 	$consulta = $conn->query($sql);
 
@@ -36,7 +36,7 @@
 										echo "<tr>";
 										echo "<td><a href='station.php?deveui=".$resultado["deveui"]."&date=".gmdate("Y-m-d")."'>".$resultado["deveui"]."</td>";
 										echo "<td>".$resultado["descripcion"]."</td>";
-										echo "<td>-</td>";
+										echo "<td>".$resultado["data"]."</td>";
 										echo "<td><a href='statics.php?deveui=".$resultado["deveui"]."'><span class='glyphicon glyphicon-signal' aria-hidden='true'></span> View Statics </a></td>";
 										echo "</tr>";
 									}
