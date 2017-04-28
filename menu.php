@@ -113,7 +113,7 @@
       <ul class="nav navbar-nav navbar-right">
       	<?php
       		if(!empty($usr)){
-      		echo "<li><a href='#' style='color: #fff;'><span class='glyphicon glyphicon-user' aria-hidden='true'></span> " . $_SESSION['nombre'] . "</a></b></li>";
+      		echo "<li><a name='#' style='color: #fff;'><span class='glyphicon glyphicon-user' aria-hidden='true'></span> " . $_SESSION['nombre'] . "</a></b></li>";
       	?>
       		<li><a href="logout.php" style="color: #fff;"><span class="glyphicon glyphicon-log-out" aria-hidden="true"></span> Logout</a></li>
       	<?php

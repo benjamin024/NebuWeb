@@ -10,7 +10,7 @@
 				<div class="col-md-8 col-md-offset-2">
 					<center><span style='font-size: 2.8em; font-weight: bold;'>Benjamín Dorantes García</span><br><br>
 					<table class="table-bordered table-hover table-responsive" style="text-align: center;">
-						<thead>
+						<thead class="bg-primary">
 							<tr>
 								<th class="col-md-3"></th>
 								<th class="col-md-2">Date</th>

@@ -12,7 +12,7 @@
 					<div class="alert alert-success alert-dismissable">
 					  <a href="#" class="close" data-dismiss="alert" aria-label="close">x</a>
 					  <span class="glyphicon glyphicon-screenshot" aria-hidden="true"></span>
-					  Station <b>3037343657357101</b> has changed to status <b> AAAAAg== </b><br><br>
+					  Station <b>3037343657357101</b> has changed to status <b> GREEN </b><br><br>
 					  05:48:19
 					</div>
 

@@ -53,7 +53,7 @@
 					?>
 					<div class="table">
 						<table class="table-bordered table-hover table-responsive">
-							<thead  style="text-align: center;">
+							<thead  style="text-align: center;" class="bg-primary">
 								<tr>
 									<th class="col-md-3">Time</th>
 									<th class="col-md-3">Frequency</th>
@@ -66,7 +66,24 @@
 										echo "<tr>";
 										echo "<td>".strftime("%H:%M:%S",strtotime($resultado["mtime"]))."</td>";
 										echo "<td>".$resultado["frequency"]."</td>";
-										echo "<td>".$resultado["data"]."</td>";
+										$celda = "<td>-</td>";
+										switch($resultado["data"]){
+											case 0:
+												$celda = "<td class='alert alert-danger'><b>RED</b></td>";
+												break;
+											case 1:
+												$celda = "<td class='alert alert-warning'><b>YELLOW</b></td>";
+												break;
+											case 2:
+												$celda = "<td class='alert alert-info'><b>BLUE</b></td>";
+												break;
+											case 3:
+												$celda = "<td class='alert alert-success'><b>GREEN</b></td>";
+												break;
+											default:
+												$celda = "<td>-</td>";
+										}
+										echo $celda;
 										echo "</tr>";
 									}
 							}

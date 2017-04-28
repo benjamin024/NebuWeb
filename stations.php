@@ -5,7 +5,6 @@
 	$sql = "SELECT DISTINCT e.deveui, e.descripcion, m.data, m.mtime from estacion as e, mensaje as m where e.deveui = m.deveui and m.mtime IN (SELECT max(mtime) from mensaje WHERE deveui = m.deveui);";
 
 	$consulta = $conn->query($sql);
-
 ?>
 <!DOCTYPE html>
 <html>
@@ -22,7 +21,7 @@
 					<div class="table">
 						<center><span style='font-size: 2.8em; font-weight: bold;'>Registered Stations</span>
 						<table class="table-bordered table-hover table-responsive">
-							<thead  style="text-align: center;">
+							<thead  style="text-align: center;" class="bg-primary">
 								<tr>
 									<th class="col-md-4">ID</th>
 									<th class="col-md-4">Description</th>
@@ -36,14 +35,33 @@
 										echo "<tr>";
 										echo "<td><a href='station.php?deveui=".$resultado["deveui"]."&date=".gmdate("Y-m-d")."'>".$resultado["deveui"]."</td>";
 										echo "<td>".$resultado["descripcion"]."</td>";
-										echo "<td>".$resultado["data"]."</td>";
+										$celda = "<td>-</td>";
+										switch($resultado["data"]){
+											case 0:
+												$celda = "<td class='alert alert-danger'><b>RED</b></td>";
+												break;
+											case 1:
+												$celda = "<td class='alert alert-warning'><b>YELLOW</b></td>";
+												break;
+											case 2:
+												$celda = "<td class='alert alert-info'><b>BLUE</b></td>";
+												break;
+											case 3:
+												$celda = "<td class='alert alert-success'><b>GREEN</b></td>";
+												break;
+											default:
+												$celda = "<td>-</td>";
+										}
+										echo $celda;
 										echo "<td><a href='statics.php?deveui=".$resultado["deveui"]."'><span class='glyphicon glyphicon-signal' aria-hidden='true'></span> View Statics </a></td>";
 										echo "</tr>";
 									}
 							}
 							?>
 							</tbody>
-						</table></center>
+						</table>
+						<br><br><a href="formStation.php"><button class="btn btn-primary">Add a new station</button></a>
+						</center>
 					</div>
 				</div>
 			</div>
