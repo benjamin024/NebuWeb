@@ -30,7 +30,7 @@
 		<div class="container">
 			<div class="row flex-parent">
 				<div class="col-md-8 col-md-offset-2">
-					<center><span style='font-size: 2.8em; font-weight: bold;'><?php echo "Station: $deveui"; ?> </span><br>
+					<br><br><center><span style='font-size: 2.8em; font-weight: bold;'><?php echo "Station: $deveui"; ?> </span><br>
 					<span style='font-size: 1.2em; font-weight: bold;'>Select a time interval:</span><br><br>
 					<div class='col-md-6'>
 						<div class="form-group">

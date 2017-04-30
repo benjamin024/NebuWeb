@@ -8,7 +8,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2">
-					<center><span style='font-size: 2.8em; font-weight: bold;'>Notifications</span><br><br>
+					<br><br><center><span style='font-size: 2.8em; font-weight: bold;'>Notifications</span><br><br>
 					<div class="alert alert-success alert-dismissable">
 					  <a href="#" class="close" data-dismiss="alert" aria-label="close">x</a>
 					  <span class="glyphicon glyphicon-screenshot" aria-hidden="true"></span>

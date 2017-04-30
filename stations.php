@@ -13,6 +13,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2">
+					<br><br>
 					<?php 
 						if($consulta->num_rows <= 0)
 							echo "<center><span style='font-size: 2.8em; font-weight: bold;'>There are not any registered station</span></center>";

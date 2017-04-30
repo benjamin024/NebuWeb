@@ -34,7 +34,7 @@
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2">
 					<?php 
-						echo "<center><span style='font-size: 2.8em; font-weight: bold;'>Station: $deveui </span>";
+						echo "<br><br><center><span style='font-size: 2.8em; font-weight: bold;'>Station: $deveui </span>";
 					?>
 					<form method="get" class="form-inline">
 				        <div class="form-group"> <!-- Date input -->

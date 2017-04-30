@@ -8,7 +8,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2">
-					<center><span style='font-size: 2.8em; font-weight: bold;'>Registered Employees</span>
+					<br><br><center><span style='font-size: 2.8em; font-weight: bold;'>Registered Employees</span>
 					<table class="table-bordered table-hover table-responsive">
 						<thead class="bg-primary"> 
 							<tr>

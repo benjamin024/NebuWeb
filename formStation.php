@@ -17,7 +17,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2">
-					<center><span style='font-size: 2.8em; font-weight: bold;'>Register a new station</span><br>
+					<br><br><center><span style='font-size: 2.8em; font-weight: bold;'>Register a new station</span><br>
 					<form class="form" method="post" action="formStation.php">
 						<div class="form-group">
 						  <label class="control-label" for="deveui">Station ID:</label>

@@ -27,7 +27,7 @@
     <div class="container">
     	<div class="row flex-parent">
     		<div class="col-md-4 col-md-offset-4 flex-child" >
-    			<center><span style="font-size: 4.0em; font-weight: bold;">Login</span>
+    			<br><br><center><span style="font-size: 4.0em; font-weight: bold;">Login</span>
     			<form action="login.php" method="post">
 			  <div class="form-group">
 			    <label for="user">Username:</label>
