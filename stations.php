@@ -2,7 +2,7 @@
 	include("menu.php");
 	require("conexion.php");
 
-	$sql = "SELECT DISTINCT e.deveui, e.descripcion, m.data, m.mtime from estacion as e, mensaje as m where e.deveui = m.deveui and m.mtime IN (SELECT max(mtime) from mensaje WHERE deveui = m.deveui);";
+	$sql = "SELECT DISTINCT e.deveui, e.descripcion, m.data, m.mtime from estacion as e, mensaje as m where e.deveui = m.deveui and m.mtime IN (SELECT max(mtime) from mensaje WHERE deveui = m.deveui AND data IN ('00000000','00000001','00000002', '00000003'));";
 
 	$consulta = $conn->query($sql);
 ?>

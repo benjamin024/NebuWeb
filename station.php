@@ -4,9 +4,8 @@
 	setlocale(LC_TIME, 'es_MX.UTF-8');
 	$deveui =@$_GET["deveui"];
 	$date =@$_GET["date"];
-	$sql = "SELECT * FROM mensaje WHERE deveui = '$deveui' and CAST(mtime as DATE) = '$date' ORDER BY mtime DESC;";
+	$sql = "SELECT * FROM mensaje WHERE deveui = '$deveui' and  CAST(mtime as DATE) = '$date' AND data IN ('00000000','00000001','00000002', '00000003') ORDER BY mtime DESC;";
 	$consulta = $conn->query($sql);
-	setlocale(LC_TIME, "en_US");
 ?>
 <!DOCTYPE html>
 <html>
